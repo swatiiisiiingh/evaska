@@ -10,17 +10,16 @@ export function middleware(request: NextRequest) {
 
     if (token === 'ev@sk@0wner2026' || cookie === 'ev@sk@0wner2026') {
       const response = NextResponse.next()
-      if (token === 'ev@sk@0wner2026') {
-        response.cookies.set('evaska_admin_key', 'ev@sk@0wner2026', {
-          httpOnly: true,
-          maxAge: 60 * 60 * 24 * 7,
-          sameSite: 'strict',
-        })
-      }
+      response.cookies.set('evaska_admin_key', 'ev@sk@0wner2026', {
+        httpOnly: false,
+        maxAge: 60 * 60 * 24 * 7,
+        sameSite: 'lax',
+        path: '/',
+      })
       return response
     }
 
-    return NextResponse.rewrite(new URL('/404', request.url))
+    return NextResponse.rewrite(new URL('/not-found', request.url))
   }
 
   return NextResponse.next()
