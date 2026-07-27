@@ -18,7 +18,7 @@
 
 ## 📖 About
 
-**Evaska** is a full-stack event management web application built as part of a **Pinnacle Labs internship**. It lets clients browse curated events, design fully custom events through a guided planner, and manage their bookings — all from a single, polished interface. Behind the scenes, a hidden admin layer gives the platform owner complete control over events, bookings, and client communication.
+**Evaska** is a full-stack event management web application built as a personal project. It lets clients browse curated events, design fully custom events through a guided planner, and manage their bookings — all from a single, polished interface. Behind the scenes, a hidden admin layer gives the platform owner complete control over events, bookings, and client communication.
 
 The platform follows a **single-owner architecture**: rather than a multi-vendor marketplace, Evaska is designed around one organizer/admin managing the entire platform, which keeps access control simple and the client experience focused.
 
@@ -147,7 +147,9 @@ To deploy your own instance:
 
 ---
 
+## 📄 License
 
+This is a personal project. All rights reserved unless otherwise specified.
 
 ---
 
